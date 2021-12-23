@@ -13,7 +13,7 @@ using System.Text;
 
 namespace Company.Function
 {
-    public static class Company.Function.Resi
+    public static class Company.Function
     {
         private const int V = 1;
 
