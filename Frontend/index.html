@@ -32,6 +32,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
 
                     <li><br> </li>
                     <li><br> </li>
@@ -176,27 +177,54 @@
             <hr class="m-0" />
             <!-- Interests-->
             <section class="resume-section" id="interests">
-                <div class="resume-section-content">
+               <div class="resume-section-content">
                     <h2 class="mb-5">Interests</h2>
                     <p>I have had a passion for sneakers. I love sports! If you named it, ive played it! However, my first love was basketball. I love listening to stories, and to immerse myself in other cultures and environments. I always search for the path less traveled.</p>
                     <p class="mb-0">I love music, and I've been involved with it since I can remember. I love researching, and digging new music.</p><br>
                     <p>Well, I'm glad that you are here. Now take a second, and come into my world:</p>
                     <iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2Fjorgehernandezlaloth%2Fkenny-g-mix-i%2F" frameborder="0" ></iframe>
-                </div>
+               </div>
             </section>
+                <hr class="m-0" />
+                <!-- Awards-->
+                <section class="resume-section" id="awards">
+                    <div class="resume-section-content">
+                        <h2 class="mb-5">Certifications</h2>
+                        <img src="img/az-104.png" alt="Azure Administrator Associate badge" width="150" height="150">
+                        <img src="img/azure-fundamentals.png" alt="Azure Fundamentals badge" width="150" height="150">
+                        <img src="img/terraform.jpg" alt="Terraform Associate badge" width="150" height="150">
+                        <br><br><br><br><br>
+                    </div>
+                </section>
+
             <hr class="m-0" />
-            <!-- Awards-->
-            <section class="resume-section" id="awards">
+            <!-- Projects-->
+            <section class="resume-section" id="Projects">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Certifications</h2>
-                    <img src="img/az-104.png" alt="Azure Administrator Associate badge" width="150" height="150">
-                    <img src="img/azure-fundamentals.png" alt="Azure Fundamentals badge" width="150" height="150">
-                    <img src="img/terraform.jpg" alt="Terraform Associate badge" width="150" height="150">
-                    <br><br><br><br><br>
+                    <h2 class="mb-5">Projects</h2>
+                    <div class="subheading mb-3">Event-Driven Python</div>
+                       <ul>  12/2021
+                        <li>*ETL processing pipeline for COVID-19 data using Python and Azure. The data is displayed using a real-time dashboard. Built to participate in Forrest Brazeal's ACloudGuru Challenge.</li>
+                        <li>* EventBridge triggers a python Lambda function each day, that uses Pandas to extract data from two sources, transform, and load it into DynamoDB.</li>
+                        <li>* API Gateway triggers a second lambda function that uses Matplot to create a graph and metrics.</li>
+                        <li>* Automated infrastructure using AWS Serverless template (SAM).</li>
+                        <li>* CloudFormation template to build a serverless website.</li>
+                        <li>* CI/CD pipeline</li>
+                        <li>* View code and further details on GitHub. </li>
+                        </ul>
+                    <div class="subheading mb-3">Serverless Website </div>
+                        <ul>12/2021
+                        <li>* Serverless resume website with view counter using Azure. Built to participate in Forrest Brazeal's Cloud Resume Challenge.</li>
+                        <li>* Built a responsive site in HTML using the Bootstrap framework.</li>
+                        <li>* View counter uses a Lambda function written in Python to update DynamoDB's atomic counter.</li>
+                        <li>* Uses API Gateway to trigger the function and displays the counter using JavaScript.</li>
+                        <li>* Website front-end is deployed through CloudFront with an S3 origin.
+                        <li>* Automated infrastructure using CloudFormation and the AWS Serverless Application Model (SAM).
+                        <li>* CI/CD pipeline </li>
+                        <li>* View code on GitHub. Final Product. </li>
+                        </ul>
                 </div>
             </section>
-        </div>
-    </div>
 
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
