@@ -10,7 +10,6 @@ using Newtonsoft.Json;
 using System.Net.Http;
 using System.Text;
 
-
 namespace Company.Function
 {
     public static class Company.Function
