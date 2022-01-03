@@ -3,12 +3,12 @@
 //     getVisitCount();
 // });
 
-
-const functionApi = 'https://visitorcounter.azurewebsites.net/api/GetCounter?code=4mYCr1McGHA4t0ls8MjUCvJ8svXjJvZoaiOuwzJzTssIsHIA1jUbvw=='; 
+const functionApiUrl = 'https://getresicounter.azurewebsites.net/api/GetResumeCounter?code=cre70RVuFmsEz7h66Ea2tpgELPj0ucJUXNZ7dFXRQ9j3i6JfFz2nyQ=='
+const localfunctionApi = 'https://visitorcounter.azurewebsites.net/api/GetCounter?code=4mYCr1McGHA4t0ls8MjUCvJ8svXjJvZoaiOuwzJzTssIsHIA1jUbvw=='; 
 
 const getVisitCount = () => {
     let count = 30;
-    fetch(functionApi)
+    fetch(functionApiUrl)
     .then(response => {
         return response.text()
     })
