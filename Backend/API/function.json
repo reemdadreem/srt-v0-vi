@@ -23,7 +23,7 @@
       "databaseName": "AzureResume",
       "collectionName": "Counter",
       "connectionStringSetting": "ConnectionString",
-      "partitionKey": "1",
+      "partitionKey": "/id",
       "id": "1"
     },
     {
@@ -34,7 +34,7 @@
       "collectionName": "Counter",
       "createIfNotExists": "true",
       "connectionStringSetting": "ConnectionString",
-      "partitionKey": "1",
+      "partitionKey": "/id",
       "id": "1"
     }
   ]

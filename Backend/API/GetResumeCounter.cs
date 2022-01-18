@@ -17,11 +17,11 @@ namespace Company.Function
     {
         [FunctionName("GetResumeCounter")]
         public static HttpResponseMessage Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
-            [CosmosDB(databaseName:"AzureResume", collectionName:"counter", 
-            ConnectionStringSetting = "AzureResumeConnectionString", Id = "index", PartitionKey = "index")] Counter counter,
-            [CosmosDB(databaseName:"AzureResume",collectionName: "counter", 
-            ConnectionStringSetting = "AzureResumeConnectionString", Id = "index", PartitionKey = "index")] out Counter updatedCounter,
+            [HttpTrigger(AuthorizationLevel.Function, "get", Route = null)] HttpRequest req,
+            [CosmosDB(databaseName:"AzureResume", collectionName:"Counter", 
+            ConnectionStringSetting = "AzureResumeConnectionString", Id = "1", PartitionKey = "/id")] Counter counter,
+            [CosmosDB(databaseName:"AzureResume", collectionName: "Counter", 
+            ConnectionStringSetting = "AzureResumeConnectionString", Id = "1", PartitionKey = "/id")] out Counter updatedCounter,
             ILogger log)
         {
             log.LogInformation("AzureResume was triggered");
